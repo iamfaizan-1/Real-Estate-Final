@@ -2,7 +2,10 @@
 
 @theme{
   --color-primary:#048853;
+  --color-backround:#F3FFF4;
+  --color-secondary:#013220;
   --breakpoint-sm:576px;
   --breakpoint-md:768px;
-  --breakpoint-lg:992px
+  --breakpoint-lg:992px;
+
 }

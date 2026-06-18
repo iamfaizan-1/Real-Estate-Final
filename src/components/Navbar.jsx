@@ -60,7 +60,7 @@ const HamburgerIcon = ({ size = 24 }) => (
 
   return (
     <div className="relative">
-      <nav className="py-3 px-10 flex items-center justify-between bg-primary text-white relative z-50 border-b border-white">
+      <nav className="py-3 px-10 flex items-center justify-between bg-gradient-to-r from-primary to-secondary text-white relative z-50 ">
         
         {/* logo */}
         <div className="flex items-center gap-2">
