@@ -60,7 +60,7 @@ const HamburgerIcon = ({ size = 24 }) => (
 
   return (
     <div className="relative">
-      <nav className="py-3 px-6 flex items-center justify-between bg-primary text-white relative z-50 border-b border-zinc-800">
+      <nav className="py-3 px-10 flex items-center justify-between bg-primary text-white relative z-50 border-b border-white">
         
         {/* logo */}
         <div className="flex items-center gap-2">
@@ -78,6 +78,12 @@ const HamburgerIcon = ({ size = 24 }) => (
           <li className="cursor-pointer hover:scale-[1.05] transition-transform ease-in-out duration-300">Clients</li>
         </ul>
 
+
+<div className="hidden md:block">
+  <button className=" font-bold bg-white text-primary px-3 py-2 text-[13px] hover:scale-[1.05] transition-transform ease-in-out">
+    Contact us
+  </button>
+</div>
         {/* mobile button toggle */}
         <div className="md:hidden cursor-pointer text-zinc-300 hover:text-white" onClick={() => { setIsOpen(!isOpen) }}>
           <span className={`transition-transform duration-300 ease-in-out inline-block ${isOpen ? "rotate-180" : "rotate-0"}`}>
@@ -89,7 +95,7 @@ const HamburgerIcon = ({ size = 24 }) => (
 
       {/* Mobile Drawer Menu */}
       <ul 
-        className={`md:hidden absolute top-[53px] h-[90vh] gap-6 transition-all duration-300 ease-in-out left-0 w-full z-40 flex flex-col items-center justify-center overflow-hidden bg-black text-white ${
+        className={`md:hidden absolute top-[54px] h-[90vh] gap-6 transition-all duration-300 ease-in-out left-0 w-full z-40 flex flex-col items-center justify-center overflow-hidden bg-primary text-white ${
           isOpen 
             ? "max-h-[90vh] py-3 opacity-100" 
             : "max-h-0 py-0 opacity-0 pointer-events-none"
