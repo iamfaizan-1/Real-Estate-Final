@@ -4,6 +4,9 @@ import Hero from './components/Hero'
 import Services from './components/Services'
 import Hero2 from './components/Hero2'
 import BestCollection from './components/BestCollection'
+import FiturRumah from './components/Fiturrumah'
+import RealEstateContact from './components/RealEstateContact'
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -14,6 +17,9 @@ function App() {
 <Services/>
 <Hero2/>
 <BestCollection/>
+<FiturRumah/>
+<RealEstateContact/>
+<Footer/>
     </div>
   )
 }

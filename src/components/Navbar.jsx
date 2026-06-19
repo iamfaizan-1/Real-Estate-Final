@@ -94,18 +94,48 @@ const HamburgerIcon = ({ size = 24 }) => (
       </nav>
 
       {/* Mobile Drawer Menu */}
-      <ul 
-        className={`md:hidden absolute top-[54px] h-[90vh] gap-6 transition-all duration-300 ease-in-out left-0 w-full z-40 flex flex-col items-center justify-center overflow-hidden bg-primary text-white ${
-          isOpen 
-            ? "max-h-[90vh] py-3 opacity-100" 
-            : "max-h-0 py-0 opacity-0 pointer-events-none"
-        }`}
-      >
-        <li className="text-xl font-semibold hover:text-indigo-400 transition-colors cursor-pointer" onClick={() => setIsOpen(false)}>Home</li>
-        <li className="text-xl font-semibold hover:text-indigo-400 transition-colors cursor-pointer" onClick={() => setIsOpen(false)}>Features</li>
-        <li className="text-xl font-semibold hover:text-indigo-400 transition-colors cursor-pointer" onClick={() => setIsOpen(false)}>Products</li>
-        <li className="text-xl font-semibold hover:text-indigo-400 transition-colors cursor-pointer" onClick={() => setIsOpen(false)}>Clients</li>
-      </ul>
+     <ul
+  className={`md:hidden absolute top-[54px] h-[90vh] gap-6 transition-all duration-300 ease-in-out left-0 w-full z-40 flex flex-col items-center justify-center overflow-hidden bg-primary text-white ${
+    isOpen
+      ? "max-h-[90vh] py-3 opacity-100"
+      : "max-h-0 py-0 opacity-0 pointer-events-none"
+  }`}
+>
+  <li
+    className="text-[15px] font-semibold hover:scale-[1.04] transition-transform duration-300 ease-in-out cursor-pointer"
+    onClick={() => setIsOpen(false)}
+  >
+    Home
+  </li>
+  <li
+    className="text-[15px] font-semibold hover:scale-[1.04] transition-transform duration-300 ease-in-out cursor-pointer"
+    onClick={() => setIsOpen(false)}
+  >
+    Features
+  </li>
+  <li
+    className="text-[15px]  font-semibold hover:scale-[1.04] transition-transform duration-300 ease-in-out cursor-pointer"
+    onClick={() => setIsOpen(false)}
+  >
+    Products
+  </li>
+  <li
+    className="text-[15px] font-semibold hover:scale-[1.04] transition-transform duration-300 ease-in-out cursor-pointer"
+    onClick={() => setIsOpen(false)}
+  >
+    Clients
+  </li>
+
+  {/* Button moved INSIDE the expanding list */}
+  <li className="mt-4">
+    <button 
+      className="font-bold bg-white flex text-primary px-6 py-2 rounded text-[15px] hover:scale-[1.05] transition-transform ease-in-out"
+      onClick={() => setIsOpen(false)}
+    >
+      Contact us
+    </button>
+  </li>
+</ul>
     </div>
   );
 }
