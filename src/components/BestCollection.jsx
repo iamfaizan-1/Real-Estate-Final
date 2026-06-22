@@ -67,7 +67,7 @@ Get your dream property right now and get best seller        </p>
     {
         bestCollection.map((item,index)=>(
 
-            <div key={index}  className="bg-white rounded-lg hover:bg-gradient-to-r hover:from-primary hover:to-secondary hover:text-white transition-colors duration-400 ease-in-out"
+            <div key={index}  className="bg-white rounded-lg hover:bg-gradient-to-br hover:from-primary hover:to-secondary hover:text-white transition-colors duration-400 ease-in-out"
 >
 
 <div className="p-2" >

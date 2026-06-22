@@ -1,9 +1,9 @@
 import React from 'react'
-import hero from "../assets/hero.png"
+import hero from "../assets/hero demo.png"
 import { LiaAngleRightSolid } from 'react-icons/lia'
 function Hero() {
   return (
-    <div className="bg-gradient-to-r from-primary to-secondary">
+    <div className="bg-gradient-to-br from-primary to-secondary">
       <div style={{
         backgroundImage: `url(${hero})`,
         height: "500px",

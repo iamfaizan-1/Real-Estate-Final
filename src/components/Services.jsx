@@ -43,7 +43,7 @@ function Services() {
 
     {
         services.map((item)=>(
-<div className="flex flex-col items-center bg-white hover:bg-primary gap-3 py-3 px-3 md:p-6 transition-all duration-300 ease-in-out rounded-2xl hover:text-white" key={item.title}>
+<div className="flex flex-col items-center bg-white hover:bg-gradient-to-br hover:from-primary to-secondary gap-3 py-3 px-3 md:p-6 transition-colors duration-300 ease-in-out rounded-2xl hover:text-white" key={item.title}>
    <div className="h-20 w-20 bg-white border-4 border-primary rounded-full flex items-center justify-center">
      <img src={item.image} width="40px" alt="card img" />
    </div>
